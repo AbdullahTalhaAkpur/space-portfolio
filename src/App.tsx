@@ -332,13 +332,14 @@ function App() {
               My Projects
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
               {/* Project Card 1 */}
               <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="bg-blue-900/20 rounded-xl overflow-hidden backdrop-blur-sm border border-blue-500/20"
+                whileHover={{ scale: 1.02 }}
+                className="bg-black/30 rounded-xl overflow-hidden backdrop-blur-xl border border-white/10 
+                         shadow-lg h-[320px] flex flex-col"
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-32 overflow-hidden">
                   <img
                     src="/projects/agriverts.png"
                     alt="Agriverts React Dashboard"
@@ -346,34 +347,36 @@ function App() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-white mb-2">Agriverts React Dashboard</h3>
-                  <p className="text-gray-300 mb-4">
-                  For Agriverts company, I developed the frontend of an artificial intelligence-based plant analysis platform. I created user-friendly and responsive interfaces using React.js, Node.js, HTML, CSS, and Material UI.
+                <div className="p-4 flex flex-col flex-1">
+                  <h3 className="text-lg font-semibold text-blue-400 mb-2">Agriverts React Dashboard</h3>
+                  <p className="text-gray-300 text-sm mb-3 flex-1 line-clamp-2">
+                    For Agriverts company, I developed the frontend of an artificial intelligence-based plant analysis platform.
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      React
-                    </span>
-                    <span className="px-3 py-1 bg-green-500/20 rounded-full text-sm text-green-300">
-                      Node.js
-                    </span>
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      Material UI
-                    </span>
-                    <span className="px-3 py-1 bg-green-500/20 rounded-full text-sm text-green-300">
-                      CSS
-                    </span>
+                  <div className="flex flex-wrap gap-1.5 mb-3">
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">React</span>
+                    <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">Node.js</span>
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">Material UI</span>
+                  </div>
+                  <div className="flex justify-between items-center mt-auto pt-2 border-t border-white/5">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
+                    >
+                      View Details →
+                    </a>
                   </div>
                 </div>
               </motion.div>
 
               {/* Project Card 2 */}
               <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="bg-blue-900/20 rounded-xl overflow-hidden backdrop-blur-sm border border-blue-500/20"
+                whileHover={{ scale: 1.02 }}
+                className="bg-black/30 rounded-xl overflow-hidden backdrop-blur-xl border border-white/10 
+                         shadow-lg h-[320px] flex flex-col"
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-32 overflow-hidden">
                   <img
                     src="/projects/socialmedia.png"
                     alt="Social Media Platform"
@@ -381,34 +384,36 @@ function App() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-white mb-2">Social Media Platform</h3>
-                  <p className="text-gray-300 mb-4">
-                    A full-stack social media application where users can share posts, like, and comment. Features include real-time updates, user authentication, and a responsive design built with React and Material UI.
+                <div className="p-4 flex flex-col flex-1">
+                  <h3 className="text-lg font-semibold text-blue-400 mb-2">Social Media Platform</h3>
+                  <p className="text-gray-300 text-sm mb-3 flex-1 line-clamp-2">
+                    A full-stack social media application where users can share posts, like, and comment.
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      React
-                    </span>
-                    <span className="px-3 py-1 bg-green-500/20 rounded-full text-sm text-green-300">
-                      Node.js
-                    </span>
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      Material UI
-                    </span>
-                    <span className="px-3 py-1 bg-green-500/20 rounded-full text-sm text-green-300">
-                      CSS
-                    </span>
+                  <div className="flex flex-wrap gap-1.5 mb-3">
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">React</span>
+                    <span className="px-2 py-0.5 text-xs bg-purple-500/20 text-purple-300 rounded-full">Material UI</span>
+                    <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">Node.js</span>
+                  </div>
+                  <div className="flex justify-between items-center mt-auto pt-2 border-t border-white/5">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
+                    >
+                      View Details →
+                    </a>
                   </div>
                 </div>
               </motion.div>
 
               {/* Project Card 3 */}
               <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="bg-blue-900/20 rounded-xl overflow-hidden backdrop-blur-sm border border-blue-500/20"
+                whileHover={{ scale: 1.02 }}
+                className="bg-black/30 rounded-xl overflow-hidden backdrop-blur-xl border border-white/10 
+                         shadow-lg h-[320px] flex flex-col"
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-32 overflow-hidden">
                   <img
                     src="/projects/memoryapp.png"
                     alt="Memory App"
@@ -416,31 +421,36 @@ function App() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-white mb-2">Memory App</h3>
-                  <p className="text-gray-300 mb-4">
+                <div className="p-4 flex flex-col flex-1">
+                  <h3 className="text-lg font-semibold text-blue-400 mb-2">Memory App</h3>
+                  <p className="text-gray-300 text-sm mb-3 flex-1 line-clamp-2">
                     An interactive memory game application built with React.js. Users can create, flip and match cards, track their scores, and compete against their previous records. Features a clean, modern UI with smooth animations.
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      React.js
-                    </span>
-                    <span className="px-3 py-1 bg-green-500/20 rounded-full text-sm text-green-300">
-                      Node.js
-                    </span>
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      CSS
-                    </span>
+                  <div className="flex flex-wrap gap-1.5 mb-3">
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">React.js</span>
+                    <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">Node.js</span>
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">CSS</span>
+                  </div>
+                  <div className="flex justify-between items-center mt-auto pt-2 border-t border-white/5">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
+                    >
+                      View Details →
+                    </a>
                   </div>
                 </div>
               </motion.div>
 
               {/* Project Card 4 */}
               <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="bg-blue-900/20 rounded-xl overflow-hidden backdrop-blur-sm border border-blue-500/20"
+                whileHover={{ scale: 1.02 }}
+                className="bg-black/30 rounded-xl overflow-hidden backdrop-blur-xl border border-white/10 
+                         shadow-lg h-[320px] flex flex-col"
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-32 overflow-hidden">
                   <img
                     src="/projects/spendmoney.png"
                     alt="Spend Money App"
@@ -448,66 +458,74 @@ function App() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-white mb-2">Spend Money App</h3>
-                  <p className="text-gray-300 mb-4">
+                <div className="p-4 flex flex-col flex-1">
+                  <h3 className="text-lg font-semibold text-blue-400 mb-2">Spend Money App</h3>
+                  <p className="text-gray-300 text-sm mb-3 flex-1 line-clamp-2">
                     An interactive spending simulation app inspired by the "Spend Money" concept. Users can manage a virtual budget, make purchases from a catalog of items, and see real-time updates of their remaining balance with smooth animations and intuitive UI.
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      React.js
-                    </span>
-                    <span className="px-3 py-1 bg-green-500/20 rounded-full text-sm text-green-300">
-                      Node.js
-                    </span>
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      CSS
-                    </span>
+                  <div className="flex flex-wrap gap-1.5 mb-3">
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">React.js</span>
+                    <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">Node.js</span>
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">CSS</span>
+                  </div>
+                  <div className="flex justify-between items-center mt-auto pt-2 border-t border-white/5">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
+                    >
+                      View Details →
+                    </a>
                   </div>
                 </div>
               </motion.div>
 
               {/* Project Card 5 */}
               <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="bg-blue-900/20 rounded-xl overflow-hidden backdrop-blur-sm border border-blue-500/20"
+                whileHover={{ scale: 1.02 }}
+                className="bg-black/30 rounded-xl overflow-hidden backdrop-blur-xl border border-white/10 
+                         shadow-lg h-[320px] flex flex-col"
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-32 overflow-hidden">
                   <img
-                          src="/projects/githubfinder.png"
+                    src="/projects/githubfinder.png"
                     alt="Github Finder"
                     className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-white mb-2">Github Finder App</h3>
-                  <p className="text-gray-300 mb-4">
+                <div className="p-4 flex flex-col flex-1">
+                  <h3 className="text-lg font-semibold text-blue-400 mb-2">Github Finder App</h3>
+                  <p className="text-gray-300 text-sm mb-3 flex-1 line-clamp-2">
                     A React-based application that allows users to search for GitHub users and view their profiles. Built with React and styled with Bootstrap for a responsive and modern user experience.
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      React.js
-                    </span>
-                    <span className="px-3 py-1 bg-green-500/20 rounded-full text-sm text-green-300">
-                      Node.js
-                    </span>
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      Bootstrap
-                    </span>
-                    <span className="px-3 py-1 bg-green-500/20 rounded-full text-sm text-green-300">
-                      CSS
-                    </span>
+                  <div className="flex flex-wrap gap-1.5 mb-3">
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">React.js</span>
+                    <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">Node.js</span>
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">Bootstrap</span>
+                    <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">CSS</span>
+                  </div>
+                  <div className="flex justify-between items-center mt-auto pt-2 border-t border-white/5">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
+                    >
+                      View Details →
+                    </a>
                   </div>
                 </div>
               </motion.div>
 
               {/* Project Card 6 */}
               <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="bg-blue-900/20 rounded-xl overflow-hidden backdrop-blur-sm border border-blue-500/20"
+                whileHover={{ scale: 1.02 }}
+                className="bg-black/30 rounded-xl overflow-hidden backdrop-blur-xl border border-white/10 
+                         shadow-lg h-[320px] flex flex-col"
               >
-                <div className="relative h-48 overflow-hidden grid grid-cols-2 gap-1">
+                <div className="relative h-32 overflow-hidden grid grid-cols-2 gap-1">
                   <div className="relative overflow-hidden">
                     <img
                       src="/projects/image.png"
@@ -525,37 +543,38 @@ function App() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-white mb-2">Gallery Image App</h3>
-                  <p className="text-gray-300 mb-4">
+                <div className="p-4 flex flex-col flex-1">
+                  <h3 className="text-lg font-semibold text-blue-400 mb-2">Gallery Image App</h3>
+                  <p className="text-gray-300 text-sm mb-3 flex-1 line-clamp-2">
                     A modern image gallery application with a sleek interface. Features include dynamic image loading, smooth transitions, and responsive masonry layout. Built with React and Vite for optimal performance, with TypeScript for enhanced code reliability.
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      React.js
-                    </span>
-                    <span className="px-3 py-1 bg-green-500/20 rounded-full text-sm text-green-300">
-                      Redux
-                    </span>
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      TypeScript
-                    </span>
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      Vite
-                    </span>
-                    <span className="px-3 py-1 bg-green-500/20 rounded-full text-sm text-green-300">
-                      CSS
-                    </span>
+                  <div className="flex flex-wrap gap-1.5 mb-3">
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">React.js</span>
+                    <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">Redux</span>
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">TypeScript</span>
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">Vite</span>
+                    <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">CSS</span>
+                  </div>
+                  <div className="flex justify-between items-center mt-auto pt-2 border-t border-white/5">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
+                    >
+                      View Details →
+                    </a>
                   </div>
                 </div>
               </motion.div>
 
               {/* Project Card 7 */}
               <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="bg-blue-900/20 rounded-xl overflow-hidden backdrop-blur-sm border border-blue-500/20"
+                whileHover={{ scale: 1.02 }}
+                className="bg-black/30 rounded-xl overflow-hidden backdrop-blur-xl border border-white/10 
+                         shadow-lg h-[320px] flex flex-col"
               >
-                <div className="relative h-48 overflow-hidden grid grid-cols-2 gap-1">
+                <div className="relative h-32 overflow-hidden grid grid-cols-2 gap-1">
                   <div className="relative overflow-hidden">
                     <img
                       src="/projects/kbk.png"
@@ -573,100 +592,104 @@ function App() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-white mb-2">Compare Products App</h3>
-                  <p className="text-gray-300 mb-4"> 
+                <div className="p-4 flex flex-col flex-1">
+                  <h3 className="text-lg font-semibold text-blue-400 mb-2">Compare Products App</h3>
+                  <p className="text-gray-300 text-sm mb-3 flex-1 line-clamp-2"> 
                     A modern e-commerce application that allows users to compare products side-by-side. Features include dynamic product comparison, personalized recommendations, and secure payment processing.
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      Python
-                    </span>
-                    <span className="px-3 py-1 bg-green-500/20 rounded-full text-sm text-green-300">
-                      Django
-                    </span>
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      HTML
-                    </span>
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      Mysql
-                    </span>
-                    <span className="px-3 py-1 bg-green-500/20 rounded-full text-sm text-green-300">
-                      CSS
-                    </span>
+                  <div className="flex flex-wrap gap-1.5 mb-3">
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">Python</span>
+                    <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">Django</span>
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">HTML</span>
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">Mysql</span>
+                    <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">CSS</span>
+                  </div>
+                  <div className="flex justify-between items-center mt-auto pt-2 border-t border-white/5">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
+                    >
+                      View Details →
+                    </a>
                   </div>
                 </div>
               </motion.div>    
 
               {/* Project Card 8 */}
               <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="bg-blue-900/20 rounded-xl overflow-hidden backdrop-blur-sm border border-blue-500/20"
+                whileHover={{ scale: 1.02 }}
+                className="bg-black/30 rounded-xl overflow-hidden backdrop-blur-xl border border-white/10 
+                         shadow-lg h-[320px] flex flex-col"
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-32 overflow-hidden">
                   <img
-                          src="/projects/kitap.png"
+                    src="/projects/kitap.png"
                     alt="Bookstore"
                     className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-white mb-2">Bookstore</h3>
-                  <p className="text-gray-300 mb-4">
+                <div className="p-4 flex flex-col flex-1">
+                  <h3 className="text-lg font-semibold text-blue-400 mb-2">Bookstore</h3>
+                  <p className="text-gray-300 text-sm mb-3 flex-1 line-clamp-2">
                     A modern e-commerce application that allows users to search and purchase books. Features include dynamic book recommendations
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      Python
-                    </span>
-                    <span className="px-3 py-1 bg-green-500/20 rounded-full text-sm text-green-300">
-                      Django
-                    </span>
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      SQl Lite
-                    </span>
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      HTML
-                    </span>
-                    <span className="px-3 py-1 bg-green-500/20 rounded-full text-sm text-green-300">
-                      CSS
-                    </span>
+                  <div className="flex flex-wrap gap-1.5 mb-3">
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">Python</span>
+                    <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">Django</span>
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">SQl Lite</span>
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">HTML</span>
+                    <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">CSS</span>
+                  </div>
+                  <div className="flex justify-between items-center mt-auto pt-2 border-t border-white/5">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
+                    >
+                      View Details →
+                    </a>
                   </div>
                 </div>
               </motion.div>
 
               {/* Project Card 9 */}
               <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="bg-blue-900/20 rounded-xl overflow-hidden backdrop-blur-sm border border-blue-500/20"
+                whileHover={{ scale: 1.02 }}
+                className="bg-black/30 rounded-xl overflow-hidden backdrop-blur-xl border border-white/10 
+                         shadow-lg h-[320px] flex flex-col"
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-32 overflow-hidden">
                   <img
-                          src="/projects/ticketapp.png"
+                    src="/projects/ticketapp.png"
                     alt="Ticket app"
                     className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-white mb-2">Flight Ticket App</h3>
-                  <p className="text-gray-300 mb-4">
+                <div className="p-4 flex flex-col flex-1">
+                  <h3 className="text-lg font-semibold text-blue-400 mb-2">Flight Ticket App</h3>
+                  <p className="text-gray-300 text-sm mb-3 flex-1 line-clamp-2">
                     A web application that allows users to search and book flight tickets. Features include real-time flight information
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      Vue.js
-                    </span>
-                    <span className="px-3 py-1 bg-green-500/20 rounded-full text-sm text-green-300">
-                      Vite.js
-                    </span>
-                    <span className="px-3 py-1 bg-blue-500/20 rounded-full text-sm text-blue-300">
-                      Node.js
-                    </span>
-                    <span className="px-3 py-1 bg-green-500/20 rounded-full text-sm text-green-300">
-                      CSS
-                    </span>
+                  <div className="flex flex-wrap gap-1.5 mb-3">
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">Vue.js</span>
+                    <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">Vite.js</span>
+                    <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">Node.js</span>
+                    <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">CSS</span>
+                  </div>
+                  <div className="flex justify-between items-center mt-auto pt-2 border-t border-white/5">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
+                    >
+                      View Details →
+                    </a>
                   </div>
                 </div>
               </motion.div>
