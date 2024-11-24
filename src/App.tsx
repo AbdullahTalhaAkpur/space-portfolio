@@ -357,16 +357,6 @@ function App() {
                     <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">Node.js</span>
                     <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">Material UI</span>
                   </div>
-                  <div className="flex justify-between items-center mt-auto pt-2 border-t border-white/5">
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
-                    >
-                      View Details →
-                    </a>
-                  </div>
                 </div>
               </motion.div>
 
@@ -393,16 +383,6 @@ function App() {
                     <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">React</span>
                     <span className="px-2 py-0.5 text-xs bg-purple-500/20 text-purple-300 rounded-full">Material UI</span>
                     <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">Node.js</span>
-                  </div>
-                  <div className="flex justify-between items-center mt-auto pt-2 border-t border-white/5">
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
-                    >
-                      View Details →
-                    </a>
                   </div>
                 </div>
               </motion.div>
@@ -431,16 +411,6 @@ function App() {
                     <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">Node.js</span>
                     <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">CSS</span>
                   </div>
-                  <div className="flex justify-between items-center mt-auto pt-2 border-t border-white/5">
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
-                    >
-                      View Details →
-                    </a>
-                  </div>
                 </div>
               </motion.div>
 
@@ -467,16 +437,6 @@ function App() {
                     <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">React.js</span>
                     <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">Node.js</span>
                     <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">CSS</span>
-                  </div>
-                  <div className="flex justify-between items-center mt-auto pt-2 border-t border-white/5">
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
-                    >
-                      View Details →
-                    </a>
                   </div>
                 </div>
               </motion.div>
@@ -505,16 +465,6 @@ function App() {
                     <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">Node.js</span>
                     <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">Bootstrap</span>
                     <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">CSS</span>
-                  </div>
-                  <div className="flex justify-between items-center mt-auto pt-2 border-t border-white/5">
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
-                    >
-                      View Details →
-                    </a>
                   </div>
                 </div>
               </motion.div>
@@ -555,16 +505,6 @@ function App() {
                     <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">Vite</span>
                     <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">CSS</span>
                   </div>
-                  <div className="flex justify-between items-center mt-auto pt-2 border-t border-white/5">
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
-                    >
-                      View Details →
-                    </a>
-                  </div>
                 </div>
               </motion.div>
 
@@ -604,16 +544,6 @@ function App() {
                     <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">Mysql</span>
                     <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">CSS</span>
                   </div>
-                  <div className="flex justify-between items-center mt-auto pt-2 border-t border-white/5">
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
-                    >
-                      View Details →
-                    </a>
-                  </div>
                 </div>
               </motion.div>    
 
@@ -643,16 +573,6 @@ function App() {
                     <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">HTML</span>
                     <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">CSS</span>
                   </div>
-                  <div className="flex justify-between items-center mt-auto pt-2 border-t border-white/5">
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
-                    >
-                      View Details →
-                    </a>
-                  </div>
                 </div>
               </motion.div>
 
@@ -680,16 +600,6 @@ function App() {
                     <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">Vite.js</span>
                     <span className="px-2 py-0.5 text-xs bg-blue-500/20 text-blue-300 rounded-full">Node.js</span>
                     <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-300 rounded-full">CSS</span>
-                  </div>
-                  <div className="flex justify-between items-center mt-auto pt-2 border-t border-white/5">
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1"
-                    >
-                      View Details →
-                    </a>
                   </div>
                 </div>
               </motion.div>
