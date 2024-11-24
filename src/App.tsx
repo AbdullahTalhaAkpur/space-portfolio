@@ -242,118 +242,80 @@ function App() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="max-w-4xl mx-auto"
             >
-              <h2 className="text-4xl font-bold text-center bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent mb-16">
-                Skills & Expertise
+              <h2 className="text-4xl font-bold text-center bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent mb-12">
+                Skills & Technologies
               </h2>
 
-              <div className="grid md:grid-cols-2 gap-12">
-                {/* Frontend Skills */}
-                <div className="space-y-6">
-                  <h3 className="text-2xl font-semibold text-blue-400 mb-6">Frontend Development</h3>
-                  
-                  {[
-                    { name: 'React', level: 90 },
-                    { name: 'Vue.js', level: 70 },
-                    { name: 'Angular', level: 75 },
-                    { name: 'JavaScript', level: 100 },
-                    { name: 'HTML/CSS', level: 100 },
-                    { name: 'Tailwind CSS', level: 90 },
-                    { name: 'Bootstrap', level: 85 }
-                  ].map((skill, index) => (
-                    <motion.div
-                      key={skill.name}
-                      initial={{ opacity: 0, x: -50 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.5, delay: index * 0.1 }}
-                      className="space-y-2"
-                    >
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-300">{skill.name}</span>
-                        <span className="text-green-400">{skill.level}%</span>
-                      </div>
-                      <div className="h-2 bg-gray-700 rounded-full overflow-hidden">
-                        <motion.div
-                          initial={{ width: 0 }}
-                          whileInView={{ width: `${skill.level}%` }}
-                          transition={{ duration: 1, delay: index * 0.1 }}
-                          className="h-full bg-gradient-to-r from-blue-500 to-green-500 rounded-full"
-                        />
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                {/* Frontend */}
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  className="flex flex-col items-center space-y-2 p-4 bg-black/30 rounded-xl backdrop-blur-sm border border-white/10"
+                >
+                  <FaReact className="text-4xl text-blue-400" />
+                  <span className="text-gray-300">React.js</span>
+                </motion.div>
 
-                {/* Backend Skills */}
-                <div className="space-y-6">
-                  <h3 className="text-2xl font-semibold text-green-400 mb-6">Backend Development</h3>
-                  
-                  {[
-                    { name: 'Python', level: 85 },
-                    { name: 'Node.js', level: 80 },
-                    { name: 'SQL', level: 65 },
-                    { name: 'MongoDB', level: 80 },
-                    { name: 'Firebase', level: 80 },
-                    { name: 'RESTful APIs', level: 90 }
-                  ].map((skill, index) => (
-                    <motion.div
-                      key={skill.name}
-                      initial={{ opacity: 0, x: 50 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.5, delay: index * 0.1 }}
-                      className="space-y-2"
-                    >
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-300">{skill.name}</span>
-                        <span className="text-green-400">{skill.level}%</span>
-                      </div>
-                      <div className="h-2 bg-gray-700 rounded-full overflow-hidden">
-                        <motion.div
-                          initial={{ width: 0 }}
-                          whileInView={{ width: `${skill.level}%` }}
-                          transition={{ duration: 1, delay: index * 0.1 }}
-                          className="h-full bg-gradient-to-r from-green-500 to-blue-500 rounded-full"
-                        />
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  className="flex flex-col items-center space-y-2 p-4 bg-black/30 rounded-xl backdrop-blur-sm border border-white/10"
+                >
+                  <FaVuejs className="text-4xl text-green-400" />
+                  <span className="text-gray-300">Vue.js</span>
+                </motion.div>
+
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  className="flex flex-col items-center space-y-2 p-4 bg-black/30 rounded-xl backdrop-blur-sm border border-white/10"
+                >
+                  <FaAngular className="text-4xl text-red-400" />
+                  <span className="text-gray-300">Angular</span>
+                </motion.div>
+
+                {/* Backend */}
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  className="flex flex-col items-center space-y-2 p-4 bg-black/30 rounded-xl backdrop-blur-sm border border-white/10"
+                >
+                  <FaNodeJs className="text-4xl text-green-500" />
+                  <span className="text-gray-300">Node.js</span>
+                </motion.div>
+
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  className="flex flex-col items-center space-y-2 p-4 bg-black/30 rounded-xl backdrop-blur-sm border border-white/10"
+                >
+                  <FaPython className="text-4xl text-yellow-400" />
+                  <span className="text-gray-300">Python</span>
+                </motion.div>
+
+                {/* Database */}
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  className="flex flex-col items-center space-y-2 p-4 bg-black/30 rounded-xl backdrop-blur-sm border border-white/10"
+                >
+                  <SiMongodb className="text-4xl text-green-500" />
+                  <span className="text-gray-300">MongoDB</span>
+                </motion.div>
+
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  className="flex flex-col items-center space-y-2 p-4 bg-black/30 rounded-xl backdrop-blur-sm border border-white/10"
+                >
+                  <SiFirebase className="text-4xl text-yellow-500" />
+                  <span className="text-gray-300">Firebase</span>
+                </motion.div>
+
+                {/* Styling */}
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  className="flex flex-col items-center space-y-2 p-4 bg-black/30 rounded-xl backdrop-blur-sm border border-white/10"
+                >
+                  <SiTailwindcss className="text-4xl text-blue-400" />
+                  <span className="text-gray-300">Tailwind CSS</span>
+                </motion.div>
               </div>
-
-              {/* Additional Skills */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="mt-16 p-8 bg-black/30 rounded-2xl backdrop-blur-xl border border-white/10"
-              >
-                <h3 className="text-2xl font-semibold text-center bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent mb-6">
-                  Additional Skills
-                </h3>
-                <div className="flex flex-wrap justify-center gap-4">
-                  {[
-                    'Git & Version Control',
-                    'Responsive Design',
-                    'UI/UX Principles',
-                    'Agile Development',
-                    'Performance Optimization',
-                    'Figma',
-                    'Canva'
-                  ].map((skill, index) => (
-                    <motion.span
-                      key={skill}
-                      initial={{ opacity: 0, scale: 0.5 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.3, delay: index * 0.1 }}
-                      className="px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/10 to-green-500/10 
-                               border border-white/10 text-gray-300 hover:text-white transition-colors"
-                    >
-                      {skill}
-                    </motion.span>
-                  ))}
-                </div>
-              </motion.div>
             </motion.div>
           </div>
         </section>
